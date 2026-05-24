@@ -1,3 +1,4 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/README.md b/README.md
 new file mode 100644
 index 0000000000000000000000000000000000000000..3aefea1e49db3e268ff639c98aa4050b5305f574
@@ -32,3 +33,6 @@ index 0000000000000000000000000000000000000000..3aefea1e49db3e268ff639c98aa4050b
 +
 +- File hasil: `Hasil/<judul_video>_clip_sub.mp4`
 +- Folder sementara: `Hasil/_temp/`
+ 
+EOF
+)
